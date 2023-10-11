@@ -1,0 +1,435 @@
+extends ./pug/layout
+
+block content
+	<!-- START RUS CONTENT -->
+	.content.content--opacity-1.content--active.content__rus 
+		<!-- START FIRST-SCREEN -->
+		.section.first-screen 
+			.container 
+				.first-screen__inner 
+					.first-screen__logo 
+						img(src="https://hhcdn.ru/ichameleon/305396.svg")
+						.first-screen__lg 
+							.first-screen__lg-btn Ru
+							<svg class="first-screen__lg-img" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							a.first-screen__lg-item.content-tab(href="#uz") Uz
+					.first-screen__title Каждый может <br> расти!
+					.first-screen__text Присоединяйтесь к нам и станьте частью <br> динамично развивающейся команды почти <br> в любой точке страны!
+					.first-screen__btn-wrapper 
+						.first-screen__btn
+							p Это творить и развиваться 
+						.first-screen__btn
+							p самим и в команде 
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+								<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+							</svg>
+		<!-- END FIRST-SCREEN -->
+
+		<!-- START ABOUT -->
+		.section.about 
+			.about__inner 
+				.about__left 
+					.about__title О нас
+					.about__text 
+						p Акционерный коммерческий банк – «Агробанк» является одним из крупнейших банков Республики Узбекистан с разветвленной сетью подразделений по всей стране и собственной экосистемой.
+						p Мы уделяем большое внимание качеству обслуживания клиентов и развитию своих сотрудников.
+					.about__stats-wrapper 
+						.about__stats 
+							+stat-card("<span class='countup' data-value='3.6'>0</span>", "+ млн", "Клиентов по стране")
+							+stat-card("<span class='countup' data-value='171'>0</span>", "", "филиалов <br><br>")
+							+stat-card("<span class='countup' data-value='12'>0</span>", "", "Региональных <br> управлений")
+						.about__stats
+							+stat-card("<span class='countup' data-value='304'>0</span>", "", "Банковских касс")
+							+stat-card("<span class='countup' data-value='130'>0</span>", "", "Центров банковских <br> услуг")
+							+stat-card("<span class='countup' data-value='6400'>0</span>", "+", "Сотрудников по всей <br> стране")
+				.about__right 
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/312525.png")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305413.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305414.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305411.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/312526.png")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305410.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305408.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305409.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305412.svg")
+		<!-- END ABOUT -->
+
+		<!-- START PHOTO-TEXT -->
+		.section.photo-text.section--short
+			.container 
+				.photo-text__inner 
+					.photo-text__img.photo-text__img--first 
+						img(src="https://hhcdn.ru/ichameleon/312530.jpg")
+					.photo-text__content 
+						.photo-text__title Наша команда
+						.photo-text__text Создаёт уникальные проекты и вносит вклад в развитие страны, уделяя внимание развитию сельского хозяйства и коммерческого бизнеса.
+		<!-- END PHOTO-TEXT -->
+
+		<!-- START PHOTO-TEXT -->
+		.section.photo-text.section--short
+			.container 
+				.photo-text__inner 
+					.photo-text__content 
+						.photo-text__title.photo-text__title--left Лучший банк — лучшие люди
+						.photo-text__text.photo-text__text--left Предоставляем банковские услуги во всех регионах и повышаем эффективность работы
+					.photo-text__img 
+						img(src="https://hhcdn.ru/ichameleon/305405.jpg")
+		<!-- END PHOTO-TEXT -->
+
+		<!-- START ADVANTAGES -->
+		.section.advantages.section--short-pt
+			.container 
+				.advantages__inner 
+					.advantages__descr 
+						p Мы подходим к работе с каждым кандидатом и сотрудником индивидуально
+					.advantages__cards 
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv1", "adv-icon")
+							.advantages__card-title Корпоративное обучение 
+							.advantages__card-text 
+								p В нашем банке со стороны штата высококвалифицированных бизнес-тренеров на постоянной основе проводятся <br> очные/дистанционные обучения в разных направлениях, курсы а так же семинары 
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv2", "adv-icon")
+							.advantages__card-title Программа адаптации
+							.advantages__card-text 
+								p Наша команда составляет индивидуальный план адаптации на период испытательного срока каждому сотруднику, занимается организацией велком встреч и на постоянной основе поддерживает кандидатов в успешной адаптации в компании.
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv3", "adv-icon")
+							.advantages__card-title Корпоративная библиотека
+							.advantages__card-text 
+								p Важный формат саморазвития, который у нас представлен. Наша библиотека располагает огромным количеством литературы, которая поможет развиваться в разных направлениях.
+		<!-- END ADVANTAGES -->
+
+		<!-- START WE -->
+		.section.we.section--short-pt
+			.container 
+				.swiper-container.we__slider
+					.swiper-wrapper
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--one
+								.we__slider-content
+									.we__slider-title Профессионализм
+									.we__slider-text Мы ценим специалистов, которые постоянно <br> совершенствуют свои навыки и стремятся к <br> выдающимся результатам.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--two
+								.we__slider-content
+									.we__slider-title Ответственность
+									.we__slider-text Мы ищем сотрудников, готовых нести <br> ответственность за свою работу и принимать <br> решения, способствующие достижению <br> общих целей.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--three
+								.we__slider-content
+									.we__slider-title Спортивный дух
+									.we__slider-text Мы относимся очень серьезно к здоровью <br> сотрудников, поэтому у нас есть собственный <br> бесплатный тренажерный зал, не <br> обязательно ехать на другой конец города.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--four
+								.we__slider-content
+									.we__slider-title Творчество
+									.we__slider-text Мы приветствуем идеи и инновации,<br> которые помогут нам расти и развиваться в <br>быстро меняющемся мире.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--five
+								.we__slider-content
+									.we__slider-title Коллективный дух
+									.we__slider-text Мы верим в силу команды и поддерживаем <br> дружелюбную и сотрудническую атмосферу на <br> рабочем месте.
+			.slider-arrows.we-slider-arrows
+				.slider-arrow.slider-arrow--prev.we-slider-arrow-prev
+					+icon("left-arrow", "slider-arrow__icon")
+				.slider-arrow.slider-arrow--next.we-slider-arrow-next
+					+icon("right-arrow", "slider-arrow__icon")
+		<!-- END WE-SLIDER -->
+
+		<!-- START TYPE-CARD -->
+		.section.type-card.section--short-pt
+			.container 
+				.type-card__inner 
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--one Для тех, кто 
+							.type-card__btn в начале пути 
+						.type-card__text 
+							p Приходите на оплачиваемые стажировки по разным направлениям!
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312531.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--two Для работников 
+							.type-card__btn клиентского сервиса
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Представляйте компанию, её продукцию или услуги клиентам
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312533.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--three Для  
+							.type-card__btn лидеров команд
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Объединяйте команду для достижения общих целей
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312532.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--four Для IT 
+							.type-card__btn специалистов
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Создавайте банк, который делает жизнь клиентов проще
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312534.svg")
+		<!-- END TYPE-CARD -->
+
+		<!-- START VACANCY -->
+		.section.vacancy.section--short-pt
+			.container 
+				.vacancy__inner 
+					.vacancy__img 
+						img(src="https://hhcdn.ru/ichameleon/305397.svg")
+					.vacancy__title Найдите <br> вакансию мечты
+					.vacancy__btn.vacancy-btn Хочу к вам в команду
+		<!-- END VACANCY -->
+		<!-- START SECTION MAP -->
+		.section.s-map.section--short-pt
+			.container
+				.map__title Вакансии в вашем регионе
+		<!-- END SECTION MAP -->
+	<!-- END RUS CONTENT -->
+
+
+	<!-- START UZB CONTENT -->
+	.content.content__uz
+		<!-- START FIRST-SCREEN -->
+		.section.first-screen 
+			.container 
+				.first-screen__inner 
+					.first-screen__logo 
+						img(src="https://hhcdn.ru/ichameleon/305396.svg")
+						.first-screen__lg 
+							.first-screen__lg-btn Uz
+							<svg class="first-screen__lg-img" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							a.first-screen__lg-item.content-tab(href="#rus") Ru
+					.first-screen__title Har kim <br> o'sishga qodir!
+					.first-screen__text Bizga qo'shiling va mamlakatning istalgan <br> hududidan barqaror o'sib borayotgan <br> jamoaning bir bo'lagiga aylaning!
+					.first-screen__btn-wrapper 
+						.first-screen__btn.first-screen__btn--uz
+							p Jamoada o'sing
+						.first-screen__btn.first-screen__btn--uz2
+							p va rivojlaning
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+								<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+							</svg>
+		<!-- END FIRST-SCREEN -->
+
+		<!-- START ABOUT -->
+		.section.about.about--uz 
+			.about__inner 
+				.about__left 
+					.about__title Biz haqimizda
+					.about__text 
+						p «Аgrobank» aksiyadorlik tijorat banki O‘zbekiston Respublikasining butun mamlakat bo‘ylab keng filiallar tarmog‘i hamda o‘z ekotizimiga ega eng yirik banklardan biri hisoblanadi.
+						p Biz mijozlarga xizmat ko‘rsatish sifati va xodimlarimizni rivojlantirishga alohida e’tibor qaratamiz.
+					.about__stats-wrapper 
+						.about__stats 
+							+stat-card("<span class='countup' data-value='3.6'>0</span>", "+ mln", "Mijozlar")
+							+stat-card("<span class='countup' data-value='171'>0</span>", "", "Filiallar")
+							+stat-card("<span class='countup' data-value='12'>0</span>", "", "Viloyat boshqarmalari")
+						.about__stats
+							+stat-card("<span class='countup' data-value='304'>0</span>", "", "Bank kassalari")
+							+stat-card("<span class='countup' data-value='130'>0</span>", "", "Bank xizmatlari markazi")
+							+stat-card("<span class='countup' data-value='6400'>0</span>", "+", "Xodimlar")
+				.about__right 
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/312525.png")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305413.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305414.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305411.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/312526.png")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305410.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305408.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305409.svg")
+					.about__img-wrapper 
+						img(src="https://hhcdn.ru/ichameleon/305412.svg")
+		<!-- END ABOUT -->
+
+		<!-- START PHOTO-TEXT -->
+		.section.photo-text.section--short
+			.container 
+				.photo-text__inner 
+					.photo-text__img.photo-text__img--first 
+						img(src="https://hhcdn.ru/ichameleon/312530.jpg")
+					.photo-text__content 
+						.photo-text__title Bizning jamoa
+						.photo-text__text Betakror loyihalar yaratib, qishloq xo‘jaligi va bankning tijorat biznesini rivojlantirishga e’tibor qaratgan holda mamlakat taraqqiyotiga hissa qo‘shmoqda.
+		<!-- END PHOTO-TEXT -->
+
+		<!-- START PHOTO-TEXT -->
+		.section.photo-text.section--short
+			.container 
+				.photo-text__inner 
+					.photo-text__content 
+						.photo-text__title.photo-text__title--left Eng yaxshi bank - eng <br> yaxshi xodimlar
+						.photo-text__text.photo-text__text--left Biz bank xizmatlarini barcha hududlarda taqdim etamiz va operatsion samaradorlikni oshiramiz
+					.photo-text__img 
+						img(src="https://hhcdn.ru/ichameleon/305405.jpg")
+		<!-- END PHOTO-TEXT -->
+
+		<!-- START ADVANTAGES -->
+		.section.advantages.section--short-pt
+			.container 
+				.advantages__inner 
+					.advantages__descr 
+						p Biz har bir nomzod va xodim bilan ishlashga alohida yondashamiz
+					.advantages__cards 
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv1", "adv-icon")
+							.advantages__card-title Korporativ ta'lim
+							.advantages__card-text 
+								p Bizning yuqori malakali biznes trenerlarimiz turli yo'nalishlar, kurslar va seminarlar bo'yicha kunduzgi va masofaviy ta'limni olib borishadi.
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv2", "adv-icon")
+							.advantages__card-title Moslashuv dasturi
+							.advantages__card-text 
+								p Sinov muddati uchun individual moslashuv rejasi, welcome-uchrashuvlarini tashkil etish va jamoani doimiy qo'llab-quvvatlash kompaniyaga muvaffaqiyatli moslashishga yordam beradi.
+						.advantages__card
+							.advantages__card-icon 
+								+icon("adv3", "adv-icon")
+							.advantages__card-title Korporativ kutubxona
+							.advantages__card-text 
+								p Biz taqdim etayotgan o'z-o'zini rivojlantirishning muhim formati. Bizning kutubxonamiz rivojlanishingizga yordam beradigan turli yo'nalishlardagi juda ko'p adabiyotlarga ega.
+		<!-- END ADVANTAGES -->
+
+		<!-- START WE -->
+		.section.we.section--short-pt
+			.container 
+				.swiper-container.we__slider-uz
+					.swiper-wrapper
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--one
+								.we__slider-content
+									.we__slider-title Professionallik
+									.we__slider-text Biz o‘z ko‘nikmalarini doimiy ravishda takomillashtirib, yuksak natijalarga intiluvchi mutaxassislarni qadrlaymiz.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--two
+								.we__slider-content
+									.we__slider-title Mas’uliyat
+									.we__slider-text Biz o‘z ishiga mas’uliyatli va umumiy maqsadlarga erishishga xizmat qiladigan qarorlar qabul qilishga tayyor xodimlarni izlaymiz.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--three
+								.we__slider-content
+									.we__slider-title Salomatlik ruhi
+									.we__slider-text Biz xodimlarimiz salomatligiga juda jiddiy yondashamiz, shuning uchun bepul sport zali mavjud, shaharning narigi chetiga borishingiz shart emas.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--four
+								.we__slider-content
+									.we__slider-title Ijodkorlik
+									.we__slider-text O‘zgarib borayotgan dunyoda o‘sishimiz va rivojlanishimizga yordam beradigan g‘oya va innovatsiyalarga doimo ochiqmiz.
+						.swiper-slide
+							.we__slider-slide.we__slider-slide--five
+								.we__slider-content
+									.we__slider-title Jamoaviy ruh
+									.we__slider-text Biz jamoa kuchiga ishonamiz va ish joyida <br> do‘stona hamda hamjihatlikka asoslangan <br> muhitni qo‘llab-quvvatlaymiz.
+			.slider-arrows.we-slider-arrows
+				.slider-arrow.slider-arrow--prev.we-slider-uz-arrow-prev
+					+icon("left-arrow", "slider-arrow__icon")
+				.slider-arrow.slider-arrow--next.we-slider-uz-arrow-next
+					+icon("right-arrow", "slider-arrow__icon")
+		<!-- END WE-SLIDER -->
+
+		<!-- START TYPE-CARD -->
+		.section.type-card.section--short-pt
+			.container 
+				.type-card__inner 
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--uzone Karyerasini endi
+							.type-card__btn boshlayotganlar uchun
+						.type-card__text 
+							p Turli sohalardagi haq to'lanuvchi stajirovkaga tashrif buyuring!
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312531.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--uztwo Mijozlarga xizmat ko'rsatish  
+							.type-card__btn xodimlari uchun
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Mijozlarga kompaniya, uning mahsulotlari yoki xizmatlarini taqdim eting.
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312533.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--three Jamoa
+							.type-card__btn yetakchilari uchun
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Umumiy maqsadlarga erishish uchun jamoangizni birlashtiring.
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312532.svg")
+					.type-card__item 
+						.type-card__btn-wrapper 
+							.type-card__btn.type-card__btn--four IT 
+							.type-card__btn mutaxassislari uchun
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M15.0794 9.97284L13.2423 8.13573L10.2488 5.14228C9.61471 4.51748 8.53296 4.9651 8.53296 5.86034V11.6701V16.9016C8.53296 17.7968 9.61471 18.2445 10.2488 17.6103L15.0794 12.7798C15.8534 12.0151 15.8534 10.7468 15.0794 9.97284Z" fill="#E7F7EF"/>
+								</svg>
+						.type-card__text 
+							p Mijozlarning hayotini osonlashtiradigan bank yarating!
+						.type-card__img 
+							img(src="https://hhcdn.ru/ichameleon/312534.svg")
+		<!-- END TYPE-CARD -->
+
+		<!-- START VACANCY -->
+		.section.vacancy.section--short-pt
+			.container 
+				.vacancy__inner 
+					.vacancy__img 
+						img(src="https://hhcdn.ru/ichameleon/305397.svg")
+					.vacancy__title Orzuingizdagi ishni toping
+					.vacancy__btn.vacancy-btn Jamoaga qo'shilish
+		<!-- END VACANCY -->
+
+		<!-- START SECTION MAP -->
+		.section.s-map.section--short-pt
+			.container
+				.map__title Hududingizdagi bo'sh ish o'rinlari
+		<!-- END SECTION MAP -->
+	<!-- END UZB CONTENT -->
+	<!-- START SECTION MAP -->
+	.section.s-map.section--long-pb#map
+		.container
+			include ./map
+	<!-- END SECTION MAP -->

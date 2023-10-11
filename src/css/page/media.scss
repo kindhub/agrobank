@@ -1,0 +1,704 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container {
+		max-width: 880px;
+	}
+
+	.wrapper {
+		font-size: 16px;
+	}
+
+	.first-screen {
+		height: 620px;
+		padding-top: 40px;
+
+		&__title {
+			margin-top: 60px;
+			font-size: 50px;
+			line-height: 56px;
+		}
+	}
+
+	.about {
+		&__inner {
+			justify-content: flex-start;
+			gap: 40px;
+		}
+
+		&__left {
+			width: 48%;
+		}
+
+		&__title {
+			font-size: 36px;
+			line-height: 42px;
+		}
+
+		&__text {
+			margin-top: 25px;
+		}
+
+		&__stats {
+			gap: 30px;
+		}
+	}
+
+	.stat-card {
+		&__title {
+			font-size: 44px;
+			line-height: 54px;
+		}
+
+		&__text {
+			margin-top: 15px;
+		}
+	}
+
+	.advantages {
+		&__cards {
+			margin-top: 80px;
+		}
+
+		&__card-title {
+			margin: 22px 0;
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+
+	.we {
+		&__slider-text {
+			margin-top: 20px;
+		}
+		&__slider-slide {
+			height: 380px;
+		}
+		&__slider-content {
+			padding: 120px 63px 63px;
+			height: 360px;
+			color: #FFF;
+			width: 70%;
+		}
+		&-slider-uz-arrow-prev,
+		&-slider-arrow-prev{
+			left: 0;
+		}
+		&-slider-uz-arrow-next,
+		&-slider-arrow-next {
+			right: 0;
+		}
+	}
+
+	.type-card {
+		&__item {
+			padding: 30px 50px 30px 30px;
+		}
+
+		&__btn {
+			font-size: 22px;
+		}
+	}
+
+	.vacancy {
+		&__inner {
+			height: 430px;
+			padding: 100px 0 0 500px;
+		}
+
+		&__title {
+			font-size: 40px;
+			line-height: 50px;
+		}
+	}
+	.s-map{
+		display: none;
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper {
+		font-size: 15px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.first-screen {
+		height: 420px;
+
+		&__logo img {
+			width: 200px;
+		}
+
+		&__title {
+			margin-top: 40px;
+			font-size: 40px;
+			line-height: 46px;
+		}
+
+		&__text {
+			margin-top: 15px;
+			font-size: 17px;
+			line-height: 22px;
+		}
+
+		&__btn-wrapper {
+			margin-top: 15px;
+		}
+
+		&__btn {
+			gap: 2px;
+			border-radius: 110px;
+			border: 2px solid #FFF;
+			padding: 8px;
+			font-size: 17px;
+			line-height: 22px;
+
+			&:nth-child(1) {
+				width: 270px;
+			}
+
+			&:nth-child(2) {
+				width: 210px;
+				transform: translate(80px, -2px);
+			}
+		}
+		&__btn--uz2 {
+			width: 200px !important;
+			transform: translate(80px, -2px) !important;
+		}
+		&__lg {
+			&-img {
+				top: 12px;
+			}
+		}
+	}
+
+	.about {
+		&__inner {
+			gap: 0;
+			flex-wrap: wrap;
+		}
+
+		&__left {
+			width: 100%;
+		}
+
+		&__right {
+			margin-top: 30px;
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+
+		&__img-wrapper {
+			margin: 0 !important;
+			width: 100% !important;
+			&:nth-child(1) img {
+				width: 200px;
+			}
+			&:nth-child(5) img {
+				width: 270px;
+			}
+		}
+	}
+
+	.photo-text {
+		&__inner {
+			flex-wrap: wrap;
+			gap: 40px;
+		}
+
+		&__content {
+			width: 100%;
+		}
+
+		&__img--first {
+			order: 2;
+		}
+
+		&__title {
+			&--left {
+				text-align: left;
+			}
+		}
+
+		&__text {
+			&--left {
+				text-align: left;
+			}
+		}
+	}
+
+	.advantages {
+		&__descr {
+			width: 100%;
+			font-size: 26px;
+		}
+
+		&__cards {
+			margin-top: 50px;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+
+		&__card {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__card-icon {
+			margin: 0 auto;
+		}
+	}
+	.we {
+		&__slider-text {
+			margin-top: 10px;
+			font-size: 15px;
+			line-height: 21px;
+		}
+		&__slider-slide {
+			height: 340px;
+			background-position: top center;
+		}
+		&__slider-title {
+			font-size: 30px;
+			line-height: 38px;
+		}
+		&__slider-content {
+			padding: 110px 40px 40px;
+			height: 340px;
+			width: 80%;
+		}
+		&-slider-uz-arrow-prev,
+		&-slider-arrow-prev{
+			left: 0;
+		}
+		&-slider-uz-arrow-next,
+		&-slider-arrow-next {
+			right: 0;
+		}
+	}
+
+	.type-card {
+		&__item {
+			width: 100%;
+			height: 270px;
+
+			&:nth-child(3) {
+				margin-top: 0px;
+			}
+
+			&:nth-child(4) {
+				margin-top: 0px;
+			}
+		}
+
+		&__inner {
+			gap: 30px;
+		}
+
+		&__text {
+			width: 70%;
+		}
+	}
+
+	.vacancy {
+		&__inner {
+			height: 300px;
+			padding: 50px 0 0 320px;
+		}
+
+		&__img {
+			width: 200px;
+		}
+
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+			letter-spacing: 0px;
+		}
+
+		&__btn {
+			padding: 10px 0;
+			text-align: center;
+			width: 210px;
+		}
+	}
+
+	.map {
+		&__title {
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper {
+		font-size: 14px;
+	}
+
+	.first-screen {
+		height: 350px;
+		margin: 0;
+
+		&__title {
+			margin-top: 15px;
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		&__text {
+			margin-top: 15px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		&__btn-wrapper {
+			margin-top: 10px;
+		}
+
+		&__btn {
+			gap: 0;
+			border: 1px solid #FFF;
+			padding: 5px;
+			font-size: 16px;
+			line-height: 20px;
+
+			&:nth-child(1) {
+				width: 270px;
+				position: relative;
+			}
+
+			&:nth-child(2) {
+				width: 210px;
+				position: absolute;
+				transform: translate(80px, -1px);
+			}
+		}
+		&__btn--uz2 {
+			width: 155px !important;
+			transform: translate(80px, -1px) !important;
+		}
+		&__lg {
+			padding: 4px 6px;
+			height: 27px;
+			&-img {
+				right: 10px;
+			}
+			&-btn {
+				width: 40px;
+			}
+			&.active {
+				height: 47px;
+			}
+		}
+	}
+
+	.about {
+		&__title {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+
+	.stat-card {
+		&__title {
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		&__text {
+			margin-top: 10px;
+		}
+	}
+
+	.we {
+		&__title {
+			font-size: 30px;
+			line-height: 32px;
+		}
+		&__slider-slide {
+			height: 270px;
+		}
+		&__slider-title {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		&__slider-content {
+			padding: 90px 40px;
+			height: 200px;
+			width: 100%;
+		}
+
+		&__slider-text {
+			margin-top: 10px;
+			font-size: 15px;
+			line-height: 22px;
+		}
+	}
+	.type-card__text {
+		width: 81%;
+	}
+	.vacancy {
+		&__inner {
+			height: 280px;
+			padding: 50px 0 0 300px;
+		}
+
+		&__img {
+			width: 160px;
+		}
+
+		&__title {
+			font-size: 20px;
+			line-height: 26px;
+		}
+
+		&__btn {
+			padding: 10px 0;
+			text-align: center;
+			font-size: 14px;
+			width: 160px;
+		}
+	}
+	.map {
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper {
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.first-screen {
+		height: 250px;
+		padding-top: 20px;
+		border-radius: 25px;
+		&__title {
+			margin-top: 10px;
+			font-size: 18px;
+			line-height: 26px;
+			& br{
+				display: none;
+			}
+		}
+		&__logo img {
+			width: 140px;
+		}
+
+		&__text {
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 20px;
+		}
+
+		&__btn-wrapper {
+			margin-top: 10px;
+		}
+
+		&__btn {
+			padding: 4px;
+			font-size: 14px;
+
+			&:nth-child(1) {
+				width: 220px;
+			}
+
+			&:nth-child(2) {
+				width: 180px;
+				transform: translate(40px, -1px);
+			}
+		}
+		&__lg {
+			transform: translateY(5px);
+		}
+	}
+	.about {
+		padding-left: 15px;
+		padding-right: 15px;
+		&__title {
+			text-align: center;
+		}
+		&__text {
+			margin-top: 15px;
+
+			& p+p {
+				margin-top: 15px;
+			}
+		}
+	}
+	.stat-card {
+		&__title {
+			font-size: 28px;
+			line-height: 30px;
+		}
+
+		&__text {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+	}
+	.photo-text {
+		&__inner {
+			gap: 20px;
+		}
+		&__title {
+			font-size: 23px;
+			line-height: 30px;
+		}
+	}
+	.advantages {
+		&__descr {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+	.we {
+		// position: relative;
+		// &::before{
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: #000;
+		// 	opacity: .5;
+		// 	z-index: 1;
+		// 	border-radius: 24px;
+		// }
+		&__slider-slide {
+			height: 230px;
+		}
+		&__slider-title {
+			font-size: 16px;
+			line-height: 20px;
+			z-index: 111;
+		}
+		&__slider-text {
+			z-index: 111;
+		}
+		
+		&__slider-text {
+			font-size: 14px;
+			line-height: 20px;
+			& br{
+				display: none;
+			}
+		}
+		&__slider-content {
+			padding: 70px 20px;
+		}
+		&-slider-arrows {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+			padding: 15px 0;
+		}
+		&-slider-uz-arrow-prev,
+		&-slider-uz-arrow-next,
+		&-slider-arrow-prev,
+		&-slider-arrow-next {
+			position: relative;
+			transform: translateY(0);
+		}
+	}
+	.type-card {
+		&__item {
+			height: 200px;
+			padding: 15px 50px 15px 30px;
+		}
+		&__text {
+			width: 100%;
+			font-size: 14px;
+			margin-top: 50px;
+		}
+		&__img {
+			width: 100px;
+		}
+		&__btn {
+			gap: 0px;
+			border: 3px solid #FFF;
+			padding: 6px;
+			font-size: 18px;
+			line-height: 22px;
+
+			&:nth-child(2) {
+				transform: translate(26px, -3px);
+			}
+			&--uzone {
+				width: 180px;
+			}
+	
+			&--uztwo {
+				width: 260px;
+			}
+	
+			&--one {
+				width: 150px;
+			}
+	
+			&--two {
+				width: 200px;
+			}
+			
+			&--three {
+				width: 100px;
+			}
+			
+			&--four {
+				width: 100px;
+			}
+		}
+	}
+	.vacancy {
+		&__inner {
+			height: 200px;
+			padding: 70px 0 0 160px;
+		}
+		&__subtitle {
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: 3px;
+		}
+		&__img {
+			width: 100px;
+		}
+		&__btn {
+			font-size: 12px;
+			line-height: 18px;
+			padding: 8px 12px;
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 26px;
+			margin-top: 10px;
+		}
+
+		&__btn {
+			margin-top: 10px;
+			padding: 10px 0;
+			text-align: center;
+			font-size: 14px;
+			width: 160px;
+		}
+	}
+}
